@@ -6,13 +6,13 @@ const ContadorHijo = ({ contador, sumar, restar }) => {
   //    superNro++;
   // }
 
-  let superNro = useMemo(() => 
-  {let Nro=0;
-  for (let i = 0; i < 1000000000; i++) {
-     Nro++;
-  }
-  return Nro;}
-  , []);
+  let superNro = useMemo(() => {
+    let Nro = 0;
+    for (let i = 0; i < 1000000000; i++) {
+      Nro++;
+    }
+    return Nro;
+  }, []);
 
   console.log("Hijo del Contador Rederisado");
   return (
